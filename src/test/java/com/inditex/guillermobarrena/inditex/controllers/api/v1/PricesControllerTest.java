@@ -21,7 +21,7 @@ class PricesControllerTest {
 
     @Test
     void getAll() throws Exception {
-        client.get().uri("http://localhost:8080/api/v1/")
+        client.get().uri("/api/v1/")
                 .exchange()
                 .expectStatus().isOk()
                 .expectHeader().contentType(MediaType.APPLICATION_JSON)
@@ -41,9 +41,6 @@ class PricesControllerTest {
                 .get()
                 .uri(uriBuilder ->
                         uriBuilder
-                                .scheme("http")
-                                .host("localhost")
-                                .port("8080")
                                 .path("/api/v1/prices")
                                 .queryParam("brandId", 1)
                                 .queryParam("productId", 35455)
@@ -64,9 +61,6 @@ class PricesControllerTest {
                 .get()
                 .uri(uriBuilder ->
                         uriBuilder
-                                .scheme("http")
-                                .host("localhost")
-                                .port("8080")
                                 .path("/api/v1/prices")
                                 .queryParam("brandId", 1)
                                 .queryParam("productId", 35455)
@@ -87,9 +81,6 @@ class PricesControllerTest {
                 .get()
                 .uri(uriBuilder ->
                         uriBuilder
-                                .scheme("http")
-                                .host("localhost")
-                                .port("8080")
                                 .path("/api/v1/prices")
                                 .queryParam("brandId", 1)
                                 .queryParam("productId", 35455)
@@ -110,9 +101,6 @@ class PricesControllerTest {
                 .get()
                 .uri(uriBuilder ->
                         uriBuilder
-                                .scheme("http")
-                                .host("localhost")
-                                .port("8080")
                                 .path("/api/v1/prices")
                                 .queryParam("brandId", "1")
                                 .queryParam("startDate", "2020-06-15-10.00.00")
@@ -132,9 +120,6 @@ class PricesControllerTest {
                 .get()
                 .uri(uriBuilder ->
                         uriBuilder
-                                .scheme("http")
-                                .host("localhost")
-                                .port("8080")
                                 .path("/api/v1/prices")
                                 .queryParam("brandId", "1")
                                 .queryParam("startDate", "2020-06-15-21.00.00")

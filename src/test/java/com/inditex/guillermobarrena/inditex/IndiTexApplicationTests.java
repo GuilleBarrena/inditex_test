@@ -14,6 +14,7 @@ class IndiTexApplicationTests {
 
     @Test
     void contextLoads() {
+        IndiTexApplication.main(new String[] {});
     }
 
 }
