@@ -4,6 +4,8 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 
+import java.math.BigDecimal;
+
 @Getter
 @AllArgsConstructor
 @Builder(toBuilder = true)
@@ -12,5 +14,5 @@ public class PriceDTO {
     private final Integer productId;
     private final String startDate;
     private final String endDate;
-    private final Double price;
+    private final BigDecimal price;
 }

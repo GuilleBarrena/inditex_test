@@ -7,6 +7,7 @@ import com.inditex.guillermobarrena.inditex.domain.Price;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.math.BigDecimal;
 import java.text.ParseException;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -27,7 +28,7 @@ class PriceConverterTest {
                         1000,
                         "2020-10-01-00.00.00",
                         "2020-10-02-00.00.00",
-                        365.90
+                        new BigDecimal(365.90)
                 )
         );
 
@@ -38,7 +39,7 @@ class PriceConverterTest {
         assertEquals(price.getEndDate().toString(), "2020-10-02 00:00:00.0");
         assertEquals(price.getPriceList(), null);
         assertEquals(price.getPriority(), null);
-        assertEquals(price.getPrice(), 365.90);
+        assertEquals(price.getPrice(), new BigDecimal(365.90));
         assertEquals(price.getCurrency(), null);
     }
 

@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 
+import java.math.BigDecimal;
 import java.sql.Time;
 import java.sql.Timestamp;
 
@@ -18,6 +19,6 @@ public class Price {
     private final Integer priceList;
     private final Integer productId;
     private final Integer priority;
-    private final Double price;
+    private final BigDecimal price;
     private final String currency;
 }

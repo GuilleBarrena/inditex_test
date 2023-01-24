@@ -7,7 +7,7 @@ import java.util.Date;
 
 public class DateUtils {
     public static Timestamp convertDate(String date) throws ParseException {
-        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd-HH.mm.SS");
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd-HH.mm.ss");
         Date parsedDate = dateFormat.parse(date);
         return new java.sql.Timestamp(parsedDate.getTime());
     }

@@ -4,6 +4,7 @@ import com.inditex.guillermobarrena.inditex.controllers.dto.PriceDTO;
 import com.inditex.guillermobarrena.inditex.domain.Price;
 import lombok.Getter;
 
+import java.math.BigDecimal;
 import java.text.ParseException;
 
 import static com.inditex.guillermobarrena.inditex.DateUtils.convertDate;
@@ -22,7 +23,7 @@ public class Data {
                     1,
                     35455,
                     0,
-                    35.50,
+                    new BigDecimal(35.50),
                     "EUR"
             );
         } catch (ParseException e) {
@@ -35,7 +36,7 @@ public class Data {
             35455,
             "2020-06-14 00:00:00.0",
             "2020-12-31 23:59:59.0",
-            35.50
+            new BigDecimal(35.50)
     );
     public static final Price price_2;
 
@@ -49,7 +50,7 @@ public class Data {
                     2,
                     35455,
                     0,
-                    25.45,
+                    new BigDecimal(25.45),
                     "EUR"
             );
         } catch (ParseException e) {
@@ -62,7 +63,7 @@ public class Data {
             35455,
             "2020-06-14 15:00:00.0",
             "2020-06-14 18:30:00.0",
-            25.45
+            new BigDecimal(25.45)
     );
     public static final Price price_3;
 
@@ -76,7 +77,7 @@ public class Data {
                     3,
                     35455,
                     0,
-                    30.50,
+                    new BigDecimal(30.50),
                     "EUR"
             );
         } catch (ParseException e) {
@@ -89,7 +90,7 @@ public class Data {
             35455,
             "2020-06-15 00:00:00.0",
             "2020-06-15 11:00:00.0",
-            30.50
+            new BigDecimal(30.50)
     );
     public static final Price price_4;
 
@@ -103,7 +104,7 @@ public class Data {
                     4,
                     35455,
                     0,
-                    38.95,
+                    new BigDecimal(38.95),
                     "EUR"
             );
         } catch (ParseException e) {
@@ -116,7 +117,7 @@ public class Data {
             35455,
             "2020-06-15 16:00:00.0",
             "2020-12-31 23:59:59.0",
-            38.95
+            new BigDecimal(38.95)
     );
 }
 
