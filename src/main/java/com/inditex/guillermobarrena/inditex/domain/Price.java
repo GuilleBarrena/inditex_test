@@ -7,6 +7,7 @@ import lombok.Getter;
 import java.math.BigDecimal;
 import java.sql.Time;
 import java.sql.Timestamp;
+import java.util.Currency;
 
 @Getter
 @AllArgsConstructor
@@ -20,5 +21,5 @@ public class Price {
     private final Integer productId;
     private final Integer priority;
     private final BigDecimal price;
-    private final String currency;
+    private final Currency currency;
 }

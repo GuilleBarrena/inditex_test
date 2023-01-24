@@ -6,6 +6,8 @@ import lombok.Getter;
 
 import java.math.BigDecimal;
 import java.text.ParseException;
+import java.util.Currency;
+import java.util.Locale;
 
 import static com.inditex.guillermobarrena.inditex.DateUtils.convertDate;
 
@@ -24,7 +26,7 @@ public class Data {
                     35455,
                     0,
                     new BigDecimal(35.50),
-                    "EUR"
+                    Currency.getInstance("EUR")
             );
         } catch (ParseException e) {
             throw new RuntimeException(e);
@@ -51,7 +53,8 @@ public class Data {
                     35455,
                     0,
                     new BigDecimal(25.45),
-                    "EUR"
+                    Currency.getInstance("EUR")
+
             );
         } catch (ParseException e) {
             throw new RuntimeException(e);
@@ -78,7 +81,8 @@ public class Data {
                     35455,
                     0,
                     new BigDecimal(30.50),
-                    "EUR"
+                    Currency.getInstance("EUR")
+
             );
         } catch (ParseException e) {
             throw new RuntimeException(e);
@@ -105,7 +109,7 @@ public class Data {
                     35455,
                     0,
                     new BigDecimal(38.95),
-                    "EUR"
+                    Currency.getInstance("EUR")
             );
         } catch (ParseException e) {
             throw new RuntimeException(e);

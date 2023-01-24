@@ -12,6 +12,7 @@ import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+import java.util.Currency;
 
 @Getter
 @NoArgsConstructor
@@ -47,5 +48,5 @@ public class PricesEntity {
     private BigDecimal price;
 
     @Column(name = "curr", nullable = false)
-    private  String currency;
+    private Currency currency;
 }
